@@ -8,15 +8,20 @@ PODS:
   - XMNetworking/Lib (1.0.0):
     - XMNetworking/Lib/AFNetworking-3.1.0 (= 1.0.0)
   - XMNetworking/Lib/AFNetworking-3.1.0 (1.0.0)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
 
 DEPENDENCIES:
   - pop
   - XMNetworking
+  - YYKit
 
 SPEC CHECKSUMS:
   pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
   XMNetworking: 997cdb61f537362a2bb7bb4e7e0a36bff03bdad1
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 9fe0378ba023ba7c1d06958e4b21d1c697db51d9
+PODFILE CHECKSUM: 7d6b6da6b9fbaa806b560bb013d8864d696d28d0
 
 COCOAPODS: 1.2.0.beta.1
