@@ -15,6 +15,8 @@
 		9E97473A1EBDC7FB00E61D8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E9747381EBDC7FB00E61D8B /* LaunchScreen.storyboard */; };
 		9E9747451EBDC7FB00E61D8B /* STKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9747441EBDC7FB00E61D8B /* STKitTests.m */; };
 		9E9747501EBDC7FB00E61D8B /* STKitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E97474F1EBDC7FB00E61D8B /* STKitUITests.m */; };
+		9EC638E01EBDCBAC00FC5AE3 /* STAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC638DF1EBDCBAC00FC5AE3 /* STAppDelegate.m */; };
+		9EC638E51EBDCCAA00FC5AE3 /* STRootViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC638E41EBDCCAA00FC5AE3 /* STRootViewC.m */; };
 		F30893F4ED9AFAAB0C3F7BF1 /* libPods-STKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D8821BC86D93CDFDE6BDC30 /* libPods-STKit.a */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +57,10 @@
 		9E97474B1EBDC7FB00E61D8B /* STKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = STKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E97474F1EBDC7FB00E61D8B /* STKitUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STKitUITests.m; sourceTree = "<group>"; };
 		9E9747511EBDC7FB00E61D8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EC638DE1EBDCBAC00FC5AE3 /* STAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STAppDelegate.h; sourceTree = "<group>"; };
+		9EC638DF1EBDCBAC00FC5AE3 /* STAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STAppDelegate.m; sourceTree = "<group>"; };
+		9EC638E31EBDCCAA00FC5AE3 /* STRootViewC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STRootViewC.h; sourceTree = "<group>"; };
+		9EC638E41EBDCCAA00FC5AE3 /* STRootViewC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STRootViewC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +123,7 @@
 		9E9747291EBDC7FB00E61D8B /* STKit */ = {
 			isa = PBXGroup;
 			children = (
+				9EC638DC1EBDCB5700FC5AE3 /* STUI */,
 				9E97472D1EBDC7FB00E61D8B /* AppDelegate.h */,
 				9E97472E1EBDC7FB00E61D8B /* AppDelegate.m */,
 				9E9747301EBDC7FB00E61D8B /* ViewController.h */,
@@ -154,6 +161,41 @@
 				9E9747511EBDC7FB00E61D8B /* Info.plist */,
 			);
 			path = STKitUITests;
+			sourceTree = "<group>";
+		};
+		9EC638DC1EBDCB5700FC5AE3 /* STUI */ = {
+			isa = PBXGroup;
+			children = (
+				9EC638E11EBDCC5800FC5AE3 /* STViewC */,
+				9EC638DD1EBDCB6F00FC5AE3 /* STAppDelegate */,
+			);
+			path = STUI;
+			sourceTree = "<group>";
+		};
+		9EC638DD1EBDCB6F00FC5AE3 /* STAppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				9EC638DE1EBDCBAC00FC5AE3 /* STAppDelegate.h */,
+				9EC638DF1EBDCBAC00FC5AE3 /* STAppDelegate.m */,
+			);
+			path = STAppDelegate;
+			sourceTree = "<group>";
+		};
+		9EC638E11EBDCC5800FC5AE3 /* STViewC */ = {
+			isa = PBXGroup;
+			children = (
+				9EC638E21EBDCC6C00FC5AE3 /* STRootViewC */,
+			);
+			path = STViewC;
+			sourceTree = "<group>";
+		};
+		9EC638E21EBDCC6C00FC5AE3 /* STRootViewC */ = {
+			isa = PBXGroup;
+			children = (
+				9EC638E31EBDCCAA00FC5AE3 /* STRootViewC.h */,
+				9EC638E41EBDCCAA00FC5AE3 /* STRootViewC.m */,
+			);
+			path = STRootViewC;
 			sourceTree = "<group>";
 		};
 		DE101494E8BF29F47D883246 /* Frameworks */ = {
@@ -351,7 +393,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EC638E51EBDCCAA00FC5AE3 /* STRootViewC.m in Sources */,
 				9E9747321EBDC7FB00E61D8B /* ViewController.m in Sources */,
+				9EC638E01EBDCBAC00FC5AE3 /* STAppDelegate.m in Sources */,
 				9E97472F1EBDC7FB00E61D8B /* AppDelegate.m in Sources */,
 				9E97472C1EBDC7FB00E61D8B /* main.m in Sources */,
 			);
@@ -591,6 +635,7 @@
 				9E9747561EBDC7FB00E61D8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9E9747571EBDC7FB00E61D8B /* Build configuration list for PBXNativeTarget "STKitTests" */ = {
 			isa = XCConfigurationList;
@@ -599,6 +644,7 @@
 				9E9747591EBDC7FB00E61D8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9E97475A1EBDC7FB00E61D8B /* Build configuration list for PBXNativeTarget "STKitUITests" */ = {
 			isa = XCConfigurationList;
@@ -607,6 +653,7 @@
 				9E97475C1EBDC7FB00E61D8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
